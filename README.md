@@ -16,6 +16,7 @@ This is obviously a (much) less robust version of something like Faker (https://
 - Run `bundle install`
 - Run `rails g jimothy:install`
 - This will scaffold user model/views, import images, seed users and add an image tag to the user view's `_user.html.erb` partial.
+- Run `rails server` and open `http://127.0.0.1:3000/users` - you should see the users from The Office.
 
 ## Usage (Slow, Doing Everything By Hand)
 - Add `gem "jimothy"` to your `Gemfile`
@@ -32,7 +33,7 @@ Jimothy::seed_users
 ```
 - Run `rails db:seed`
 - In `app/views/users/_user.html.erb`, change `<%= user.image %>` to `<%= image_tag user.image %>`
-- Run `rails server` and go to `http://127.0.0.1:3000/users`
+- Run `rails server` and go to `http://127.0.0.1:3000/users` - you should see the users from The Office.
 
 ## Details
 - Main methods (`seed_users`, etc) are in `lib/jimothy.rb`
