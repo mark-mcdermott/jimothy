@@ -1,7 +1,7 @@
 # Jimothy
 Placeholder user data from The Office
 
-![The office characters](https://github.com/mark-mcdermott/jimothy/blob/main/images/flonkerton.jpg)
+![The office characters](https://github.com/mark-mcdermott/jimothy/blob/main/lib/jimothy/images/flonkerton.jpg)
 
 ## What This Does
 
