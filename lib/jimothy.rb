@@ -33,7 +33,7 @@ module Jimothy
   end
 
   def self.import_images
-    images = Dir["#{GEM_IMAGE_PATH}" + "*.png"]
+    images = Dir["#{GEM_IMAGE_PATH}" + "*.png"] # TODO: there are jpgs in this folder for the readme, move them to a different folder
     images.each do |path|
       image = path.split('/')[-1]
       source = "#{GEM_IMAGE_PATH}" + image 
