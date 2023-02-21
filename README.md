@@ -14,6 +14,7 @@ This is a (much) less robust version of something like Faker (https://github.com
 
 ## Usage (Quick, Using Custom Generator)
 - (If you don't have an app already) Run `rails new testapp`
+- Do `cd testapp`
 - Add `gem "jimothy"` to your `Gemfile`
 - Run `bundle install`
 - Run `rails g jimothy:install`
@@ -24,6 +25,7 @@ This is a (much) less robust version of something like Faker (https://github.com
 
 ## Usage (Slow, Doing Everything By Hand)
 - (If you don't have an app already) Run `rails new testapp`
+- Do `cd testapp`
 - Add `gem "jimothy"` to your `Gemfile`
 - Run `bundle install`
 - You'll need a `User` model with `name`, `email` and `image` fields (all `string`s). Fastest way to do this is:
