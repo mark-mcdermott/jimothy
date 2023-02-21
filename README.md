@@ -11,8 +11,13 @@ Quickly seed amusing placeholder user data for your rails toy app or prototype  
 
 This is obviously a (much) less robust version of something like Faker (https://github.com/faker-ruby/faker). But I built it to be more reliable than Faker, with more solid data. Faker is great for what it does, but if you generate users from TV data, sometimes users get weird names like "Skinny Pete", where "Pete" isn't really a last name and it can mess up your data. Yeah it's just placeholder data, but we want it to look right.
 
-## Usage
+## Usage (Quick, Using Custom Generator)
+- Add `gem "jimothy"` to your `Gemfile`
+- Run `bundle install`
+- Run `rails g jimothy:install`
+- This will scaffold user model/views, import images, seed users and add an image tag to the user view's `_user.html.erb` partial.
 
+## Usage (Slow, Doing Everything By Hand)
 - Add `gem "jimothy"` to your `Gemfile`
 - Run `bundle install`
 - You'll need a `User` model with `name`, `email` and `image` fields (all `string`s. Fastest way to do this is:

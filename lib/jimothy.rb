@@ -8,6 +8,15 @@ GEM_IMAGE_PATH = "#{GEM_ROOT}/lib/jimothy/images/"
 RAILS_IMAGE_PATH = "/app/assets/images/"
 
 module Jimothy
+
+  class Railtie < Rails::Railtie
+    config.app_generators do |g|
+      g.templates.unshift File::expand_path('../../templates', __FILE__)
+      g.templates.unshift File::expand_path('../../templates/erb/scaffold/_user.html.erb.tt')
+      g.templates.unshift File::expand_path('../../templates/erb/scaffold/_user.html.erb')
+    end 
+  end
+
   def self.get_users
     users = JSON.parse(IO.read("#{JSON_PATH}"))['users']
   end
