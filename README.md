@@ -5,11 +5,11 @@ Placeholder user data from The Office
 
 ## What This Does
 
-Quickly seed amusing placeholder user data for your rails toy app or prototype  app. Generate the names, emails and profile pictures of eighteen characters from The Office.
+Quickly seed placeholder user data for your Rails toy app or prototype  app. Generate the names, emails and profile pictures of eighteen characters from The Office.
 
 ## Why
 
-This is obviously a (much) less robust version of something like Faker (https://github.com/faker-ruby/faker). But I built it to be more reliable than Faker, with more solid data. Faker is great for what it does, but if you generate users from TV data, sometimes users get weird names like "Skinny Pete", where "Pete" isn't really a last name and it can mess up your data. Yeah it's just placeholder data, but we want it to look right.
+This is a (much) less robust version of something like Faker (https://github.com/faker-ruby/faker). But I built it to be more reliable than Faker, with more solid data. Faker is great for what it does, but if you generate users from TV data, sometimes users get weird names like "Skinny Pete", where "Pete" isn't really a last name and it can mess up your data. Yeah it's just placeholder data, but we want it to look right.
 
 ## Usage (Quick, Using Custom Generator)
 - Add `gem "jimothy"` to your `Gemfile`
